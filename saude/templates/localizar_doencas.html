@@ -22,11 +22,13 @@
                     <label for="bairro-select" class="block text-lg font-medium text-gray-700">Escolha um bairro:</label>
                     <select name="bairro" id="bairro-select" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-[#4285F4] focus:border-[#4285F4] text-base bg-gray-50">
                         <option value="">Selecione um bairro</option>
+                        {% if bairro_doenca %}
                         {% for bairro in bairro_doenca %}
                             <option value="{{ bairro.id }}" {% if bairro.id == doenca_bairro_id %}selected{% endif %}>
                                 {{ bairro.nome }}
                             </option>
                         {% endfor %}
+                        {% endif %}
                     </select>
 
                     <div class="px-4">
@@ -42,7 +44,6 @@
                     {% for local in doenca %}
                         <div class="tela mb-4 p-4 border rounded-lg shadow">
                             <h3 class="text-xl font-semibold">{{ local.nome }}</h3>
-                            
                         </div>
                     {% endfor %}
                     {% else %}
