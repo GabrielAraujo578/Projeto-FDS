@@ -114,11 +114,10 @@ class DoencasBairro(models.Model):
     def __str__(self):
         return self.nome
 
-# Locais específicos dos postos de saúde dentro de um bairro
+
 class Locais_doencas(models.Model):
     nome = models.CharField(max_length=100)
-    doenca_bairro = models.ForeignKey(DoencasBairro, on_delete=models.CASCADE, default="valor_padrao")
+    doenca_bairro = models.ForeignKey(DoencasBairro, on_delete=models.CASCADE, default=1)  
 
     def __str__(self):
         return self.nome
-
