@@ -117,7 +117,7 @@ Uma aplicação web inovadora projetada para otimizar o atendimento público na 
 [Screencast do Lo-Fi](https://www.youtube.com/watch?v=obNc_53mBzs)<br>
 [Website do Azure]
 [Screencast do deploy]
-[Screencast dos testes]
+[Screencast dos testes](https://youtu.be/j4LLL2HriNc)<br>
 [Screencast da build]
 
 # Instalação
